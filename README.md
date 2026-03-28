@@ -1,10 +1,10 @@
 # Example use cases of Goose + RamaLama in Fedora Linux
 
-This README.md covers several quick/simple examples of potential AI use cases for Goose and RamaLama in Fedora Linux with Qwen 3.5 4B.  These are just quick/simple examples to show what is possible.
+This README.md covers several quick and simple examples of potential AI use cases for Goose and RamaLama in Fedora Linux with Qwen 3.5 4B to show what is possible.
 
-**Disclaimer: These instructions are provided for educational purposes.  Review all scripts, configurations, and steps before using or running.  Verify AI outputs independently. Do not process untrusted inputs (such as unknown websites, emails, or files).  Use at your own risk. **
+**Disclaimer: These instructions are provided for educational purposes.  Review all scripts, configurations, and steps before using or running.  Verify AI outputs independently. Do not process untrusted inputs (such as unknown websites, emails, or files).  Use at your own risk.**
 
-Note: The examples here use a very small Qwen 3.5 4B model that can run with CPU inferrence, so results could be poor, especially for complex tasks/situations.  If you have access to a GPU, it is highly recommended to use a larger model for much better results.
+Note: The examples here use a very small Qwen 3.5 4B model that can run with CPU inference, so results could be poor, especially for complex tasks/situations.  If you have access to a GPU, it is highly recommended to use a larger model for much better results.
 
 With these use cases, LLM inference is done locally on the system with RamaLama.
 
@@ -18,7 +18,9 @@ Start Unsloth Qwen 3.5 4B, with vision support.  You might need to tune these se
 
 This will download the main model, as well as the `mmproj-F16.gguf` file for vision support.  Depending on your connection speed, it might take a while to download the models:
 
-`ramalama serve huggingface://unsloth/Qwen3.5-4B-GGUF --runtime-args="--temp 0.6 --top-p 0.95 --min-p 0.00 --top_k 20 --presence_penalty 1.0 --repeat_penalty 1.0 --chat-template-kwargs '{\"enable_thinking\":false}'"`
+```
+ramalama serve huggingface://unsloth/Qwen3.5-4B-GGUF --runtime-args="--temp 0.6 --top-p 0.95 --min-p 0.00 --top_k 20 --presence_penalty 1.0 --repeat_penalty 1.0 --chat-template-kwargs '{\"enable_thinking\":false}'"
+```
 
 Make a note of what port it is listening on.
 
