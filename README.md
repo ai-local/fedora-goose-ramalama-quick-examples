@@ -185,7 +185,7 @@ read
 * Name shortcut `Convert text to be professional`
 * Set command to `gnome-terminal -- /home/<user>/bin/llm-clipboard.sh` **(note: change <user> to your user name)**
 * Set a shortcut, i.e. ALT+P
-* Copy some text into your clipboard, for example: ***Brian, need an update on status of TPS report!  What is ETA?  We need this ASAP.  Also, don't forget to include a cover report. ***
+* Copy some text into your clipboard, for example: ***Brian, need an update on status of TPS report!  What is ETA?  We need this ASAP.  Also, don't forget to include a cover report.***
 * Press shortcut (ALT+P)
 * Wait for the LLM to convert the text to be more professional.  Once completed, the updated text will be copied to the clipboard.
 
